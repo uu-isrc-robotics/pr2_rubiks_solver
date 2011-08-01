@@ -1,0 +1,25 @@
+<package>
+  <description brief="rubiks_graph">
+
+     rubiks_graph
+
+  </description>
+  <author>Lorenzo Riano</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rubiks_graph</url>
+  <depend package="rospy"/>
+  <depend package="pr2_controllers_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="motion_planning_msgs"/>
+  <depend package="sensor_msgs"/>
+  <depend package="actionlib"/>
+  <depend package="actionlib_msgs"/>
+  <depend package="kinematics_msgs"/>
+  <depend package="tf"/>
+  <depend package="polled_camera"/>
+  <depend package="pr2_control_utilities"/>
+
+</package>
+
+

@@ -1,0 +1,31 @@
+<package>
+  <description brief="rubiks_inspect">
+
+     rubiks_inspect
+
+	 Inspects a rubiks cube using Prosilica Camera, finding the colour of
+	 each cubie.
+
+  </description>
+  <author>Chris Burbridge</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rubiks_inspect</url>
+  <depend package="roscpp"/>
+  <depend package="prosilica_camera"/>
+  <depend package="opencv2"/>
+  <depend package="image_transport"/>
+  <depend package="image_geometry"/>
+  <depend package="tf"/>
+  <depend package="cv_bridge"/>
+  <depend package="sensor_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="polled_camera"/>
+
+  <depend package="actionlib"/>
+  <depend package="rubiks_graph"/>
+  <depend package="rubiks_solver" />
+
+</package>
+
+

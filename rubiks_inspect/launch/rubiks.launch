@@ -1,0 +1,20 @@
+<launch>
+  <machine name="c1" address="c1">
+    <env name="ROS_MASTER_URI" value="http://c1:11311" />
+</machine>
+  <machine name="c2" address="c2">
+    <env name="ROS_MASTER_URI" value="http://c1:11311" />
+</machine>
+  <node type="dynparam" pkg="dynamic_reconfigure" args="set prosilica_driver trigger_mode polled" name="dynamic_set_param_polled" machine="c2" />
+
+  <node type="image_proc" pkg="image_proc" name="prosilica_proc" machine="c2" >
+    <env name="ROS_NAMESPACE" value="/prosilica_req" />
+  </node>
+  <node type="solve_node" pkg="rubiks_solver" name="solver_node">
+  </node>
+
+  <node type="inspector" pkg="rubiks_inspect" name="inspector" output="screen"/>
+
+  <node type="rubiks_graph_server.py" pkg="rubiks_graph" name="rubiks_graph" output="log"/>
+
+</launch>

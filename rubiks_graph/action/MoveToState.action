@@ -1,0 +1,10 @@
+#goal definition
+string[] actions
+---
+#result definition
+bool success
+string info
+---
+#feedback
+int32 action_number
+string status

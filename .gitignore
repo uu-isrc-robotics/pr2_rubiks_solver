@@ -1,0 +1,14 @@
+*.pyc
+*.o
+*.so
+*~
+.cproject
+.pydevproject
+build/
+msg_gen/
+.project
+.rsyncignore
+*.png
+*.jpg
+srv_gen/
+

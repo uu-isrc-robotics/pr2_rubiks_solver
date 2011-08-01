@@ -1,0 +1,19 @@
+<launch>
+<machine name="c1" address="c1" ros-root="/opt/ros/cturtle/ros" ros-package-path="/u/pezzotto/ROS:/opt/ros/cturtle" user="pezzotto" >
+    <env name="ROS_MASTER_URI" value="http://c1:11311" />
+</machine>
+
+  <node type="dynparam" pkg="dynamic_reconfigure" args="set prosilica_driver trigger_mode streaming" name="dynamic_set_param_polled" />
+
+  <node type="image_proc" pkg="image_proc" name="prosilica" machine="c1" >
+    <env name="ROS_NAMESPACE" value="/prosilica" />
+  </node>
+  
+  <node type="image_view" pkg="image_view" name="check_display" args="theora">
+    <remap from="image" to="/prosilica/image_color"/>
+    
+  </node>
+          
+  <node type="reconfigure_gui" pkg="dynamic_reconfigure" name="reconf_the_params" output="screen" args="/prosilica_driver"/>    
+
+</launch> 

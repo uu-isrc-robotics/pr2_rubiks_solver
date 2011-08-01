@@ -1,0 +1,16 @@
+<package>
+  <description brief="rubiks_solver">
+
+     rubiks_solver
+
+  </description>
+  <author>Chris Burbridge</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rubiks_solver</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+
+</package>
+
+
