@@ -1,6 +1,6 @@
 <stack>
   <description brief="pr2_rubiks_solver">PR2 Rubik's cube solver</description>
-  <author>Maintained by Lorenzo Riano and Chrisr Burbridge</author>
+  <author>Maintained by Lorenzo Riano and Chris Burbridge</author>
   <license>GPL</license>  
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/pr2_rubiks_solver</url>
