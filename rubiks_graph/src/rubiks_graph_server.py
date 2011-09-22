@@ -144,6 +144,7 @@ class GraphServer(object):
                 continue
             mover = self.G.node[node]["mover"]
             rospy.loginfo("Executing %s"%mover.name)
+            mover.time_to_reach = 1.5
             mover.execute_and_wait()
 #            self.__point_head(node, mover)
             self.current_state = node
